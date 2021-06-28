@@ -1,16 +1,16 @@
 import random
-print("Hello World")
-preList = open("lista.txt").readlines()
+
+preList = open("lista.txt",encoding="utf-8").readlines()
 lista = []
 
 for element in preList:
     lista.append(element.strip())
 
-#People's names to assign tasks to
+# People's names to assign tasks to
 tata = []
 bartek = []
 piotrek = []
-aga =[]
+aga = []
 
 random.shuffle(lista)
 
