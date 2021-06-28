@@ -1,6 +1,10 @@
 import random
 print("Hello World")
-lista = ['Chleb', 'Cebula', 'Pomidor', 'Szynka', 'Ser', 'Papryka', 'Stół', 'Twarożek', 'Żotkiewka', 'Jajka', 'Herbata',]
+preList = open("lista.txt").readlines()
+lista = []
+
+for element in preList:
+    lista.append(element.strip())
 
 #People's names to assign tasks to
 tata = []
